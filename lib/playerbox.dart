@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:ludoui/sizeconfig.dart';
 
 class Playerbox extends StatelessWidget {
   final Color color;
@@ -26,7 +25,9 @@ class Playerbox extends StatelessWidget {
             color: Colors.white,
             borderRadius: BorderRadius.circular(15),
           ),
-          child: Center(child: GridView(gridDelegate: gridDelegate)),
+          child: Center(child: GridView.count(crossAxisCount: 2, children: [
+              
+            ],)),
         ),
       ),
     );
